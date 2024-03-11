@@ -19,6 +19,10 @@
 ## echo "src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall-packages.git;main" >> "feeds.conf.default"
 ## echo "src-git passwall https://github.com/xiaorouji/openwrt-passwall.git;main" >> "feeds.conf.default"
 
+
+git clone https://github.com/haiibo/openwrt-packages package/openwrt-packages
+make menuconfig
+
 src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall.git;packages
 src-git passwall_luci https://github.com/xiaorouji/openwrt-passwall.git;luci
 # PassWall2
