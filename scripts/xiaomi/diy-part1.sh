@@ -21,7 +21,8 @@
 
 src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall.git;packages
 src-git passwall_luci https://github.com/xiaorouji/openwrt-passwall.git;luci
-
+# PassWall2
+git clone --depth 1 https://github.com/xiaorouji/openwrt-passwall2.git luci-passwall2
 ./scripts/feeds clean
 ./scripts/feeds update -a
 ./scripts/feeds install -a
